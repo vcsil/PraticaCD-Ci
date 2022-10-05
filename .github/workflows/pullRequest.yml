@@ -4,6 +4,7 @@ jobs:
     PullRequest:
         runs-on: ubuntu-latest
         steps:
+            - run: echo "Olá turma 6 xablau!!!!!"
             - name: Checkout repository code
               uses: actions/checkout@v3
             - name: Make envfile
