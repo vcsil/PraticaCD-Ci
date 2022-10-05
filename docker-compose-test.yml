@@ -6,7 +6,7 @@ services:
     ports:
       - 2345:5432
     env_file:
-      - .env
+      - .env.test
     volumes:
       - pg:/var/lib/postgresql/data
 
@@ -16,7 +16,7 @@ services:
     ports:
       - 5000:5000
     env_file:
-      - .env
+      - .env.test
     depends_on:
       - db_ci
 
