@@ -10,4 +10,4 @@ RUN npm i && npm run build
 
 RUN npx prisma generate
 
-CMD ["node", "./src/server.js"]
+CMD ["npm", "start"]
